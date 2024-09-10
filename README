@@ -1,0 +1,10 @@
+# Proyecto Inditex
+
+Este proyecto es una prueba técnica desarrollada para Inditex utilizando Spring Boot 3.3, Java 17 y Arquitectura Hexagonal.
+
+## Técnologias
+
+- Java 17
+- Maven 3.6+
+- Spring Boot 3.3
+- H2

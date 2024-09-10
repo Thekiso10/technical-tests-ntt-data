@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+
+    <springProfile name="default">
+        <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>%clr(%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36}) - %msg%n</pattern>
+                <charset>utf8</charset>
+            </encoder>
+        </appender>
+
+        <logger name="com.ntt_data.inditex.backend" level="DEBUG"/>
+        <logger name="org.springframework" level="ERROR"/>
+        <logger name="org.hibernate" level="WARN"/>
+
+        <root level="INFO">
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </springProfile>
+
+</configuration>

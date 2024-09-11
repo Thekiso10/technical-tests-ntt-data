@@ -11,9 +11,11 @@ import com.ntt_data.inditex.backend.infrastracture.exceptions.BackendException;
 import com.ntt_data.inditex.backend.infrastracture.mapper.PricesMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 
 import java.time.Instant;
@@ -21,6 +23,7 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+@ExtendWith(MockitoExtension.class)
 public class GetAvailablePriceUseCaseImplUnitTest {
 
     @Mock
@@ -31,11 +34,6 @@ public class GetAvailablePriceUseCaseImplUnitTest {
 
     @InjectMocks
     private GetAvailablePriceUseCaseImpl getAvailablePriceUseCase;
-
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
-    }
 
     @Test
     void shouldReturnPriceWhenFound() {

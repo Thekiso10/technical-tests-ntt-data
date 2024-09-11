@@ -1,10 +1,10 @@
 package com.ntt_data.inditex.backend.application.usercase.adapter;
 
-import com.ntt_data.inditex.backend.domain.model.Prices;
 import com.ntt_data.inditex.backend.application.usercase.GetAvailablePriceUseCase;
+import com.ntt_data.inditex.backend.domain.model.Prices;
 import com.ntt_data.inditex.backend.domain.repository.PricesRepository;
-import com.ntt_data.inditex.backend.infrastracture.mapper.PricesMapper;
 import com.ntt_data.inditex.backend.infrastracture.exceptions.BackendException;
+import com.ntt_data.inditex.backend.infrastracture.mapper.PricesMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

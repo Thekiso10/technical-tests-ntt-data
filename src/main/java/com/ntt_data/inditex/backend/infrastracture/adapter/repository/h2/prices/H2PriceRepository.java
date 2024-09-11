@@ -1,7 +1,7 @@
 package com.ntt_data.inditex.backend.infrastracture.adapter.repository.h2.prices;
 
-import com.ntt_data.inditex.backend.infrastracture.entity.PricesEntity;
 import com.ntt_data.inditex.backend.domain.repository.PricesRepository;
+import com.ntt_data.inditex.backend.infrastracture.entity.PricesEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

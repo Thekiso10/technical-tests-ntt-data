@@ -1,22 +1,19 @@
 package com.ntt_data.inditex.backend.integration.application.usercase;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
-
 import com.ntt_data.inditex.backend.application.usercase.GetAvailablePriceUseCase;
 import com.ntt_data.inditex.backend.domain.model.Prices;
 import com.ntt_data.inditex.backend.domain.repository.PricesRepository;
-import com.ntt_data.inditex.backend.infrastracture.entity.PricesEntity;
-import com.ntt_data.inditex.backend.infrastracture.entity.ProductEntity;
 import com.ntt_data.inditex.backend.infrastracture.exceptions.BackendException;
 import com.ntt_data.inditex.backend.infrastracture.mapper.PricesMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
-import org.springframework.test.context.ActiveProfiles;
 
 import java.time.Instant;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
 @SpringBootTest
 public class GetAvailablePriceUseCaseIntegrationTest {

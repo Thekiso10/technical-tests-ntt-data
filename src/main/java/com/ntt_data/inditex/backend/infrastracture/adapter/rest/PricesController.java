@@ -1,10 +1,10 @@
 package com.ntt_data.inditex.backend.infrastracture.adapter.rest;
 
-import com.ntt_data.inditex.backend.domain.model.Prices;
 import com.ntt_data.inditex.backend.application.usercase.GetAvailablePriceUseCase;
+import com.ntt_data.inditex.backend.domain.model.Prices;
+import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import jakarta.validation.constraints.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
